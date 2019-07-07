@@ -1,0 +1,244 @@
+EESchema Schematic File Version 4
+LIBS:STLink_SWD_adapter-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2400 2200 3250 2200
+Wire Wire Line
+	2400 2300 3250 2300
+Wire Wire Line
+	2400 2400 3250 2400
+Wire Wire Line
+	2400 2500 3250 2500
+Wire Wire Line
+	2400 2600 3250 2600
+Wire Wire Line
+	2400 2800 3250 2800
+Wire Wire Line
+	2400 2900 3250 2900
+Wire Wire Line
+	2400 3100 3250 3100
+Text Label 2500 2200 0    50   ~ 0
+TVCC
+Text Label 2500 2300 0    50   ~ 0
+TRST
+Text Label 2500 2400 0    50   ~ 0
+TDI
+Text Label 2500 2500 0    50   ~ 0
+TMS_SWDIO
+Text Label 2500 2600 0    50   ~ 0
+TCK_SWCLK
+Text Label 2500 2900 0    50   ~ 0
+STM32RESET
+Text Label 2500 3100 0    50   ~ 0
+VDD3.3V
+Text Label 3900 2200 0    50   ~ 0
+TVCC
+Text Label 3900 2300 0    50   ~ 0
+UART_RX
+Text Label 3900 2400 0    50   ~ 0
+UART_TX
+Text Label 3900 2500 0    50   ~ 0
+BOOT0
+Text Label 3900 2600 0    50   ~ 0
+SWIM
+Text Label 3900 2800 0    50   ~ 0
+SWIM_RST
+Text Label 3900 2900 0    50   ~ 0
+KEY
+Wire Notes Line
+	3400 2550 3350 2550
+Wire Notes Line
+	3350 2550 3350 2750
+Wire Notes Line
+	3350 2750 3400 2750
+Wire Wire Line
+	6300 2250 7150 2250
+Wire Wire Line
+	6300 2350 7150 2350
+Wire Wire Line
+	6300 2450 7150 2450
+Wire Wire Line
+	6300 2550 7150 2550
+Wire Wire Line
+	6300 2650 7150 2650
+Wire Wire Line
+	6300 2750 7150 2750
+Wire Wire Line
+	5750 1650 6600 1650
+Wire Wire Line
+	5750 1750 6600 1750
+Text Label 6150 1650 0    50   ~ 0
+UART_RX
+Text Label 6150 1750 0    50   ~ 0
+UART_TX
+$Comp
+L power:GND #PWR04
+U 1 1 5D24DBC1
+P 6600 1550
+F 0 "#PWR04" H 6600 1300 50  0001 C CNN
+F 1 "GND" V 6605 1422 50  0000 R CNN
+F 2 "" H 6600 1550 50  0001 C CNN
+F 3 "" H 6600 1550 50  0001 C CNN
+	1    6600 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 1550 6600 1550
+Wire Wire Line
+	3600 1500 2900 1500
+Wire Wire Line
+	3600 1600 2900 1600
+Text Label 3200 1500 0    50   ~ 0
+TVCC
+Text Label 3200 1600 0    50   ~ 0
+VDD3.3V
+Wire Wire Line
+	3750 2200 4600 2200
+Wire Wire Line
+	3750 2300 4600 2300
+Wire Wire Line
+	3750 2400 4600 2400
+Wire Wire Line
+	3750 2500 4600 2500
+Wire Wire Line
+	3750 2600 4600 2600
+Wire Wire Line
+	3750 2800 4600 2800
+Wire Wire Line
+	4100 2900 3750 2900
+$Comp
+L power:GND #PWR01
+U 1 1 5D26833A
+P 4600 2700
+F 0 "#PWR01" H 4600 2450 50  0001 C CNN
+F 1 "GND" V 4605 2572 50  0000 R CNN
+F 2 "" H 4600 2700 50  0001 C CNN
+F 3 "" H 4600 2700 50  0001 C CNN
+	1    4600 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2700 4600 2700
+$Comp
+L power:GND #PWR02
+U 1 1 5D268D30
+P 4600 3000
+F 0 "#PWR02" H 4600 2750 50  0001 C CNN
+F 1 "GND" V 4605 2872 50  0000 R CNN
+F 2 "" H 4600 3000 50  0001 C CNN
+F 3 "" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 3000 4600 3000
+$Comp
+L power:GND #PWR03
+U 1 1 5D269F6D
+P 4600 3100
+F 0 "#PWR03" H 4600 2850 50  0001 C CNN
+F 1 "GND" V 4605 2972 50  0000 R CNN
+F 2 "" H 4600 3100 50  0001 C CNN
+F 3 "" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 3100 4600 3100
+NoConn ~ 2900 1700
+NoConn ~ 3250 2700
+NoConn ~ 3250 3000
+NoConn ~ 4100 2900
+Text Label 6150 1850 0    50   ~ 0
+TVCC
+Wire Wire Line
+	5750 1850 6600 1850
+Text Label 6400 2250 0    50   ~ 0
+TVCC
+Text Label 6400 2650 0    50   ~ 0
+STM32RESET
+Text Label 6400 2750 0    50   ~ 0
+TDO_SWO
+Text Notes 6500 2950 0    50   ~ 0
+SWD CONNECTOR
+Text Notes 5750 2000 0    50   ~ 0
+UART FROM ST-LINK
+Text Notes 3350 3350 0    50   ~ 0
+ST-LINK
+Text Notes 2600 1850 0    50   ~ 0
+POWER SUPPLY TO TARGET (OPTION)
+Text Label 6400 2550 0    50   ~ 0
+TMS_SWDIO
+$Comp
+L Connector:Conn_01x06_Male J4
+U 1 1 5D231514
+P 7350 2450
+F 0 "J4" H 7458 2831 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 7458 2740 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 7350 2450 50  0001 C CNN
+F 3 "~" H 7350 2450 50  0001 C CNN
+	1    7350 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5D2234CB
+P 5550 1650
+F 0 "J3" H 5658 1931 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 5658 1840 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5550 1650 50  0001 C CNN
+F 3 "~" H 5550 1650 50  0001 C CNN
+	1    5550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5D234C2D
+P 2700 1600
+F 0 "J1" H 2808 1881 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2808 1790 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2700 1600 50  0001 C CNN
+F 3 "~" H 2700 1600 50  0001 C CNN
+	1    2700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J2
+U 1 1 5D22FDF2
+P 3450 2600
+F 0 "J2" H 3500 3217 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 3500 3126 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 3450 2600 50  0001 C CNN
+F 3 "~" H 3450 2600 50  0001 C CNN
+	1    3450 2600
+	1    0    0    -1  
+$EndComp
+Text Label 6400 2350 0    50   ~ 0
+TCK_SWCLK
+$Comp
+L power:GND #PWR0101
+U 1 1 5D22D9EF
+P 6300 2450
+F 0 "#PWR0101" H 6300 2200 50  0001 C CNN
+F 1 "GND" V 6305 2322 50  0000 R CNN
+F 2 "" H 6300 2450 50  0001 C CNN
+F 3 "" H 6300 2450 50  0001 C CNN
+	1    6300 2450
+	0    1    1    0   
+$EndComp
+Text Label 2500 2800 0    50   ~ 0
+TDO_SWO
+$EndSCHEMATC
